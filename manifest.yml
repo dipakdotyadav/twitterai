@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: twitterai
+  host: twitterai
+  disk_quota: 1024M
+  services:
+  - twitterai-cloudantNoSQLDB
+  - twitterai-iotf-service
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: tbluemix
+    NODE_RED_PASSWORD: tbluemix@1234
